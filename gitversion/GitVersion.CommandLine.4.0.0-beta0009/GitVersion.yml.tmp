@@ -1,0 +1,10 @@
+assembly-versioning-scheme: MajorMinorPatchTag
+mode: ContinuousDeployment
+tag-prefix: '[^\/]*\/[vV]?'
+branches:
+  hotfix:
+    prevent-increment-of-merged-branch-version: true
+  release:
+    prevent-increment-of-merged-branch-version: true
+ignore:
+  sha: [5a8c7e368552e5808b20cabad28ea022df52735f]
